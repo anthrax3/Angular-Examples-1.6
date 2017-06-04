@@ -12,8 +12,6 @@ function simpleController()
     {
         self.testValue = "Test Value Updated";
     };
-
+    
     return self;
 };
-
-console.log("-> SimpleController Loaded");
