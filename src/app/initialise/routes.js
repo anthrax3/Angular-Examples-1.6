@@ -4,10 +4,11 @@ var app = angular.module('demoApp', ["ngRoute"]);
 
 app.config(function ($routeProvider) {
     $routeProvider
-        .when('/view1',
+        .when('/simpleBinding',
         {
-            controller: 'simpleController',
-            templateUrl: '../views/view1.html'
+            controller: 'simpleBindingController',
+            controllerAs: 'ctrl',
+            templateUrl: '../views/simpleBinding.html'
         })
-        .otherwise({ redirectTo: '/view1' });
+        .otherwise({ redirectTo: '/simpleBinding' });
 });

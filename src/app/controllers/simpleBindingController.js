@@ -1,9 +1,9 @@
 "use strict";
 
 (function () {
-    angular.module('demoApp').controller('simpleController', []);
-
-    function simpleController() {
+    angular.module('demoApp').controller('simpleBindingController', simpleBindingController);
+    
+    function simpleBindingController() {
         var self = this;
 
         self.testValue = "Test Value";
@@ -14,4 +14,4 @@
 
         return self;
     };
-});
+})();
