@@ -7,17 +7,8 @@
 </head>
 
 <body ng-app="demoApp" class="container">
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <a class="navbar-brand" href="#">AngularJS Examples</a>
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a href="#!simpleBinding" class="nav-link">Simple Binding</a></li>
-                <li class="nav-item active"><a href="#!growingList" class="nav-link">Growing List</a></li>
-            </ul>
-        </div>
-    </nav>
-
+    <siteNavigation></siteNavigation>
+    
     <div class="container" style="padding-top: 75px;">
         <div ng-view></div>
     </div>
@@ -25,6 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <script src="../app/initialise/routes.js"></script>
+    <script src="../app/directives/siteNavigationDirective.js"></script>
     <script src="../app/controllers/simpleBindingController.js"></script>
     <script src="../app/controllers/growingListController.js"></script>
 
