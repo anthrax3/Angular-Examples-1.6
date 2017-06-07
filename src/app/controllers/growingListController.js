@@ -16,9 +16,9 @@
         self.description = "";
         self.body = "";
 
-        self.addItem = function () {
+        self.submit = function() {
             self.items.push({ headline: self.headline, description: self.description, body: self.body })
-        }
+        };
 
         return self;
     };

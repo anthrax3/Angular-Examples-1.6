@@ -5,10 +5,12 @@
     <div class="row">
         <div class="col-3">
             <h3>Add New Item</h3>
-            <input ng-model="ctrl.headline" placeholder="Headline">
-            <input ng-model="ctrl.description" placeholder="Description">
-            <input ng-model="ctrl.body" placeholder="Body">
-            <button ng-click="ctrl.addItem();">Add Item</button>
+            <form name="inputForm" ng-submit="inputForm.$valid && ctrl.submit();">
+                <input ng-model="ctrl.headline" placeholder="Headline" required>
+                <input ng-model="ctrl.description" placeholder="Description" required>
+                <input ng-model="ctrl.body" placeholder="Body" required>
+                <button type="submit">Add Item</button>
+            </form>
         </div>
 
         <div class="col-9">
