@@ -1,24 +1,35 @@
 <div>
     <h2>Growing List Example</h2>
-    </br>
+    <br/>
 
     <div class="row">
-        <div class="col-3">
+        <div class="col-12">
             <h3>Add New Item</h3>
+            <br />
+
             <form name="inputForm" ng-submit="inputForm.$valid && ctrl.submit();">
                 <input ng-model="ctrl.headline" placeholder="Headline" required>
-                <input ng-model="ctrl.description" placeholder="Description" required>
                 <input ng-model="ctrl.body" placeholder="Body" required>
                 <button type="submit">Add Item</button>
+                <br/><br />
             </form>
         </div>
+    </div>
 
-        <div class="col-9">
+    <div class="row">
+        <div class="col-12">
             <h3>Existing Items</h3>
-            <div ng-repeat="item in ctrl.items">
-                <h4>{{ item.headline }}</h4>
-                <p>{{ item.description }}</p>
-                <p>{{ item.body }}</p>
+            <br/>
+            
+            <div class="row">
+                <div ng-repeat="item in ctrl.items" class="col-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">{{ item.headline }}</h4>
+                            <p class="card-text">{{ item.body }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
