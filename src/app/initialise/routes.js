@@ -10,5 +10,11 @@ app.config(function ($routeProvider) {
             controllerAs: 'ctrl',
             templateUrl: '../views/simpleBinding.html'
         })
+        .when('/growingList',
+        {
+            controller: 'growingListController',
+            controllerAs: 'ctrl',
+            templateUrl: '../views/growingList.html'
+        })
         .otherwise({ redirectTo: '/simpleBinding' });
 });

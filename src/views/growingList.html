@@ -1,0 +1,23 @@
+<div>
+    <h2>Growing List Example</h2>
+    </br>
+
+    <div class="row">
+        <div class="col-3">
+            <h3>Add New Item</h3>
+            <input ng-model="ctrl.headline" placeholder="Headline">
+            <input ng-model="ctrl.description" placeholder="Description">
+            <input ng-model="ctrl.body" placeholder="Body">
+            <button ng-click="ctrl.addItem();">Add Item</button>
+        </div>
+
+        <div class="col-9">
+            <h3>Existing Items</h3>
+            <div ng-repeat="item in ctrl.items">
+                <h4>{{ item.headline }}</h4>
+                <p>{{ item.description }}</p>
+                <p>{{ item.body }}</p>
+            </div>
+        </div>
+    </div>
+</div>
