@@ -1,9 +1,12 @@
 <div>
-    <h2>Simple Binding Example</h2>
+    <h2>Simple Binding</h2>
+    <p>This is an example of two way binding.</p>
 
     <input type="text" ng-model="ctrl.testValue">
 
-    </br>
+    <br/><br />
 
-    <p>{{ ctrl.testValue }}</p>
+    <div class="alert alert-info" role="alert">
+        The value you typed is: <strong>{{ ctrl.testValue }}</strong>
+    </div>
 </div>

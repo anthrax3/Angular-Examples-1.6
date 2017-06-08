@@ -22,5 +22,6 @@ app.config(function ($routeProvider) {
             controllerAs: 'ctrl',
             templateUrl: '../views/simpleMath.html'
         })
+
         .otherwise({ redirectTo: '/simpleBinding' });
 });
