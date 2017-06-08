@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\controllers",
+    "\\app\\directives",
+    "\\app\\initialise",
+    "\\app\\services",
+    "\\views"
+  ],
+  "SelectedNode": "\\app\\services\\simpleServiceExampleService.js",
+  "PreviewInSolutionExplorer": false
+}

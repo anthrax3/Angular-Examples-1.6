@@ -16,11 +16,11 @@ app.config(function ($routeProvider) {
             controllerAs: 'ctrl',
             templateUrl: '../views/growingList.html'
         })
-        .when('/simpleService',
+        .when('/simpleMath',
         {
-            controller: 'simpleServiceExampleController',
+            controller: 'simpleMathController',
             controllerAs: 'ctrl',
-            templateUrl: '../views/simpleService.html'
+            templateUrl: '../views/simpleMath.html'
         })
         .otherwise({ redirectTo: '/simpleBinding' });
 });
