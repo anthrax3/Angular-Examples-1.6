@@ -22,6 +22,9 @@ app.config(function ($routeProvider) {
             controllerAs: 'ctrl',
             templateUrl: '../views/simpleMath.html'
         })
-
+        .when('/helpfulDirectives',
+        {
+            templateUrl: '../views/helpfulDirectives.html'
+        })
         .otherwise({ redirectTo: '/simpleBinding' });
 });
