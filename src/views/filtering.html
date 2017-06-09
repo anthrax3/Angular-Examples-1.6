@@ -1,0 +1,12 @@
+<div>
+    <h2>Filtering and Ordering Example</h2>
+    <p>Live filtering can be applied by adding a | filter to an iteration.</p>
+    <br/>
+
+    <input ng-model="ctrl.filterText" type="text" placeholder="Filter By ..." />
+
+    <div ng-repeat="item in ctrl.items | filter: ctrl.filterText | orderBy: ['name', 'location'] ">
+        <h1>{{ item.name }}</h1>
+        <p>{{ item.location }}</p>
+    </div>
+</div>

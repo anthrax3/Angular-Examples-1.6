@@ -22,6 +22,12 @@ app.config(function ($routeProvider) {
             controllerAs: 'ctrl',
             templateUrl: '../views/simpleMath.html'
         })
+        .when('/filtering',
+        {
+            controller: 'filteringController',
+            controllerAs: 'ctrl',
+            templateUrl: '../views/filtering.html'
+        })
         .when('/helpfulDirectives',
         {
             templateUrl: '../views/helpfulDirectives.html'
